@@ -24,12 +24,13 @@ public class myController {
     public String next(@RequestParam(value = "varA") String bagianA,
             @RequestParam(value = "varB") String bagianB,
             @RequestParam(value = "foto") MultipartFile bagianfoto,
-            Model isiData
+            Model isiData)
             
-    )throws IOException{  
+    throws IOException{  
         byte[] img = bagianfoto.getBytes();
         String base64Image = Base64.encodeBase64String(img);
-        String imglink= "data:image/png;base64,".concat(base64Image);
+        String imglink = "data:image/png;base64,".concat(base64Image);
+        
         isiData.addAttribute("isi1", bagianA);
         isiData.addAttribute("isi2", bagianB);
         isiData.addAttribute("isi3", imglink);

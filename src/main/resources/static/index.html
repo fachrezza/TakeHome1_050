@@ -6,24 +6,36 @@ and open the template in the editor.
 -->
 <html>
     <head>
+        <style>
+            body {background-color: powderblue;}
+        </style>
         <title>Input Data</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
     </head>
     <body>
-        <h1>Silahkan masukan data kalian</h1>
-        <hr>
-        <form method="post" enctype="multipart/form-data" action="Input">
-            Nama : <input type="test" name="varA" required=""/>
-            <br>
-            <br>
-            Lokasi : <input type="test" name="varB" required=""/>
-            <br>
-            <br>
-            Foto : <input type="file" name="foto" accept="image/png, image/jpeg" required="" />
-            <br>
-            <br>
-            <input type="submit" value="Save">
-        </form>
+        <div class="container" style="margin-top: 10px">
+            <div class="row" style="border: 1px darkgrey solid; border-radius: 10px; width: 50%; margin: 0 auto; padding: 20px;">
+                <div class="col-sm-12">
+                    <h1>Silahkan masukan data kalian</h1>
+                    <hr>
+                    <form method="post" enctype="multipart/form-data" action="Input">
+                        Nama : <input type="test" name="varA" required=""/>
+                        <br>
+                        <br>
+                        Lokasi : <input type="test" name="varB" required=""/>
+                        <br>
+                        <br>
+                        Foto : <input type="file" name="foto" accept="image/png, image/jpeg" required="" />
+                        <br>
+                        <br>
+                        <input type="submit" value="Save">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        
     </body>
 </html>
