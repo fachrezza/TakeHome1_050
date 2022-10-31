@@ -30,9 +30,9 @@ public class myController {
         byte[] img = bagianfoto.getBytes();
         String base64Image = Base64.encodeBase64String(img);
         String imglink= "data:image/png;base64,".concat(base64Image);
-        isiData.addAttribute("paket1", bagianA);
-        isiData.addAttribute("paket2", bagianB);
-        isiData.addAttribute("paket3", imglink);
+        isiData.addAttribute("isi1", bagianA);
+        isiData.addAttribute("isi2", bagianB);
+        isiData.addAttribute("isi3", imglink);
         
         
         return "view";
